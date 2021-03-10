@@ -80,7 +80,8 @@ namespace BookCatalogue
             while (reader.Read())
             {
                 ListViewItem item = new ListViewItem(new string[] { Convert.ToString(reader["Title"]),
-                Convert.ToString(reader["A_Name"]), Convert.ToString(reader["G_Name"]), Convert.ToString(reader["ImagePath"])});
+                Convert.ToString(reader["A_Name"]), Convert.ToString(reader["G_Name"]), Convert.ToString(reader["ImagePath"]),
+                Convert.ToString(reader["AuthorId"]), Convert.ToString(reader["GenreId"])});
                 bookTable.Items.Add(item);
             }
             conn.Close();
@@ -96,7 +97,8 @@ namespace BookCatalogue
             while (reader.Read())
             {
                 ListViewItem item = new ListViewItem(new string[] { Convert.ToString(reader["Title"]),
-                Convert.ToString(reader["A_Name"]), Convert.ToString(reader["G_Name"]),Convert.ToString(reader["ImagePath"])});
+                Convert.ToString(reader["A_Name"]), Convert.ToString(reader["G_Name"]), Convert.ToString(reader["ImagePath"]),
+                Convert.ToString(reader["AuthorId"]), Convert.ToString(reader["GenreId"])});
                 bookTable.Items.Add(item);
             }
             conn.Close();
@@ -112,7 +114,8 @@ namespace BookCatalogue
             while (reader.Read())
             {
                 ListViewItem item = new ListViewItem(new string[] { Convert.ToString(reader["Title"]),
-                Convert.ToString(reader["A_Name"]), Convert.ToString(reader["G_Name"]),Convert.ToString(reader["ImagePath"])});
+                Convert.ToString(reader["A_Name"]), Convert.ToString(reader["G_Name"]), Convert.ToString(reader["ImagePath"]),
+                Convert.ToString(reader["AuthorId"]), Convert.ToString(reader["GenreId"])});
                 bookTable.Items.Add(item);
             }
             conn.Close();      
